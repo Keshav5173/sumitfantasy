@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+}
+#backgroundImg{
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+
+}
+#channelBox{
+    width: 30vw;
+    height: 35vh;
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(51, 49, 49);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    text-shadow: 4px 4px 10px rgba(255, 255,255, 0.5);
+    border-radius: 30px;
+    box-shadow: 0px 0px 85px #bd9c1b;
+    img{
+        width: 15vw;
+        position: absolute;
+        top: 5%;
+    }
+    h1{
+        position: absolute;
+        top: 70%;
+    }
+}
+#featureBox{
+    width: 40vw;
+    height: 25vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(51, 49, 49);
+    z-index: 10;
+    font-size: 1.2vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    text-align: center;
+}
+#joinTelegramBtn{
+     width: 30vw;
+     height: 10vh;
+     position: absolute;
+     top: 85%;
+     left: 50%;
+     transform: translateX(-50%);
+     background: linear-gradient(to right, yellow,skyblue);
+     border-radius: 20px;
+     font-size: 1.8vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+@media (max-width: 900px) {
+    #channelBox{
+        height: 25vh;
+    }
+    #featureBox{
+        height: 20vh;
+        top: 40%;
+
+    }
+    #joinTelegramBtn{
+        font-size: 2.3vw;
+        top: 70%;
+    }
+}
+@media (max-width:700px) {
+    #channelBox{
+        height: 20vh;
+        width: 40vw;
+        font-size: 1.9vw;
+    }
+    #featureBox{
+        top: 35%;
+        width: 50vw;
+        font-size: 1.7vw;
+
+    }
+    #joinTelegramBtn{
+        font-size: 1.5rem;
+        top: 65%;
+        width: 50vw;
+    }
+    
+}
+@media (max-width:500px) {
+    #channelBox{
+        height: 15vh;
+        width: 60vw;
+        font-size: 3vw;
+        img{
+            width: 25vw;
+        }
+    }
+    #featureBox{
+        top: 30%;
+        width: 80vw;
+        font-size: 2.8vw;
+
+    }
+    #joinTelegramBtn{
+        font-size: 1.5rem;
+        top: 60%;
+        width: 70vw;
+    }
+    
+}
