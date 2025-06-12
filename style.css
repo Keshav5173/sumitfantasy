@@ -37,16 +37,18 @@ html, body{
     border-radius: 30px;
     box-shadow: 0px 0px 85px #bd9c1b;
     img{
-        width: 10vw;
+        width: 7vw;
         position: absolute;
         top: 5%;
+        border-radius: 50%;
     }
 }
 #heading{
     position: absolute;
     top: 50%;
     text-align: center;
-}
+
+        }
 #featureBox{
     width: 40vw;
     height: 25vh;
@@ -114,11 +116,11 @@ html, body{
 }
 @media (max-width:500px) {
     #channelBox{
-        height: 20vh;
+        height: 25vh;
         width: 60vw;
         font-size: 3vw;
         img{
-            width: 20vw;
+            width: 13vw;
         }
     }
     #featureBox{
